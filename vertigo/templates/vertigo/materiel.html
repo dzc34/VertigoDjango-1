@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Vertigo - Gestion du matériel</title>
+</head>
+<body>
+    <form action="maj_matos" methode="post">
+    <table>
+        <thead>
+            <tr>
+                <th>Matériel</th>
+                <th>Remarque</th>
+                <th>Date d'emprunt</th>
+                <th>Emprunteur</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% csrf_token %}
+        {% for item in liste_du_materiel %}
+            <tr>
+                <td>{{ item.materiel_id }}</td>
+                <td>{{ item.materiel_id.remarque }}</td>
+                <td>{{ item.date_emprunt }}</td>
+                <td>{{ item.adherent_id }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <input type="submit" value="Mettre à jour"/>
+    </form>
+    <a href="/gestion/pdf_matos">Télécharger le fichier</a>
+</body>
+</html>

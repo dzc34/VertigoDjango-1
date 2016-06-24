@@ -1,0 +1,103 @@
+- model: vertigo.adherent
+  pk: 1
+  fields:
+    nom: Skywalker
+    prenom: Luc
+    email: luc@skywalker.name
+    telephone: Adherent(telephone='+33612345678')
+    anniversaire: 1978-08-07
+- model: vertigo.adherent
+  pk: 2
+  fields:
+    nom: Vador
+    prenom: Dark
+    email: dark.vador@empire.net
+    telephone: Adherent(telephone='+33665478932')
+    anniversaire: 1962-07-12
+- model: vertigo.contact
+  pk: 1
+  fields:
+    adherent_id: 1
+    nom: Amidala
+    prenom: Padmé
+    telephone: Contact(telephone='+33645851273')
+- model: vertigo.adhesion
+  pk: 2
+  fields:
+    adherent_id: 1
+    annee: 2015
+    paiement: cheque
+    certificat: True
+    date: 2015-10-15
+- model: vertigo.adhesion
+  pk: 1
+  fields:
+    adherent_id: 1
+    annee: 2014
+    paiement: cheque
+    certificat: True
+    date: 2014-09-17
+- model: vertigo.adhesion
+  pk: 3
+  fields:
+    adherent_id: 2
+    annee: 2015
+    paiement: especes
+    certificat: False
+    date: 2015-10-15
+- model: vertigo.materiel
+  pk: 1
+  fields:
+    description: Corde
+    identifiant: 1
+    remarque: Super corde bien souple
+    etat: neuf
+    date_achat: 2015-11-03
+    marque: Béal
+    modele: Diablo 9,8mm UNICORE
+    couleur: rouge strié noir blanc bleu
+    magasin: Expé Montpellier
+    num_serie: 7be253698c5
+    date_fabrication: 2015-07-10
+- model: vertigo.materiel
+  pk: 2
+  fields:
+    description: Corde
+    identifiant: 2
+    remarque: Super corde bien souple
+    etat: neuf
+    date_achat: 2015-11-03
+    marque: Béal
+    modele: Diablo 9,8mm UNICORE
+    couleur: rouge strié noir blanc bleu
+    magasin: Expé Montpellier
+    num_serie: 7be253698c5
+    date_fabrication: 2015-07-10
+- model: vertigo.materiel
+  pk: 3
+  fields:
+    description: Corde
+    identifiant: 3
+    remarque: Super corde bien souple
+    etat: neuf
+    date_achat: 2015-11-03
+    marque: Béal
+    modele: Diablo 9,8mm UNICORE
+    couleur: rouge strié noir blanc bleu
+    magasin: Expé Montpellier
+    num_serie: 7be253698c5
+    date_fabrication: 2015-07-10
+- model: vertigo.materiel
+  pk: 4
+  fields:
+    description: Corde
+    identifiant: 4
+    remarque: Super corde bien souple
+    etat: neuf
+    date_achat: 2015-11-03
+    marque: Béal
+    modele: Diablo 9,8mm UNICORE
+    couleur: rouge strié noir blanc bleu
+    magasin: Expé Montpellier
+    num_serie: 7be253698c5
+    date_fabrication: 2015-07-10

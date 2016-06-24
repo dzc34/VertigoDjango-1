@@ -1,0 +1,7 @@
+Babel
+Django
+Pillow
+django-phonenumber-field
+phonenumbers
+psycopg2
+reportlab
